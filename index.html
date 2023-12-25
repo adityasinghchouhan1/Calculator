@@ -1,0 +1,61 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<!---background image--->
+<body style="background-image: url(image.jpg); background-size:100%;">
+<!----heading of Calculator----->
+  <p class="fw-bold">×..Calculator..÷</p>
+ <!---main body of Calculator---->
+  <div class="bodyCal background-light">
+    <!---screen of calculator (input and output)---->
+    <div class="screen rounded-2">
+      <input class="result" id="result"></input>
+  </div>
+  <!----button of calculator----->
+  <div class="btn-s">
+    <div class="btn btn-group gap-4" role="group">
+      <!---delete or clear button---->
+      <div class="btn rounded-5 btn-color fw-bold asc-del ps-2" onclick="allclear()">ASC</div>
+      <div class="btn rounded-5 btn-color fw-bold asc-del ps-2" onclick="remove()">DEL</div>
+    </div>
+    <div class="btn btn-group gap-4" role="group">
+        <div class="btn btn-transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('7')">7</div>
+        <div class="btn  btn-transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('8')">8</div>
+        <div class="btn btn-transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('9')">9</div>
+        <div class="btn transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('/')">/</div>
+      </div>
+      <div class="btn btn-group gap-4" role="group">
+        <div class="btn btn-transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('4')">4</div>
+        <div class="btn  btn-transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('5')">5</div>
+        <div class="btn btn-transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('6')">6</div>
+        <div class="btn btn-transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('*')">*</div>
+    
+      </div>
+      <div class="btn btn-group gap-4" role="group">
+        <div class="btn btn-transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('1')">1</div>
+        <div class="btn  btn-transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('2')">2</div>
+        <div class="btn btn-transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('3')">3</div>
+        <div class="btn btn-transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('-')">-</div>
+      </div>
+      <div class="btn btn-group gap-4" role="group">
+        <div class="btn btn-transparent btn-lg rounded-5 btn-color fw-bold" onclick="display('0')">0 </div>
+        <div class="btn  btn-transparent btn-lg rounded-5 btn-color fw-bold " onclick="display('.')">.</div>
+
+        <div class="btn btn-transparent btn-lg rounded-5 btn-color fw-bold p-2" onclick="display('+')">+</div>
+        <button class="btn rounded-5 fw-bold btn-color" onclick="calculate()">=</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>
